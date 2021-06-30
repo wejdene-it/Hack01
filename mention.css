@@ -1,0 +1,81 @@
+.titre p{
+    color: white;
+    position: relative;
+    text-align: center;
+    /* font-family: Roboto, Geneva, Tahoma, sans-serif; */
+    font-family: American Typewriter, serif;
+    font-size: 50px;
+  }
+  
+  .contenu p{
+    color: white;
+    position: relative;
+    text-align: center;
+    font-family: American Typewriter, serif;
+    font-size: 12px;
+    padding-top: 240px;
+  }
+  
+  .background{
+    background-image: url("Mr_Jenkins.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    
+  }
+
+  /** NAV BARRE ******************************************************************* */
+
+.nav {
+  background-color: var(--baseColor);
+  width : 100vv;
+  height: 100px;
+  display: flex;
+}
+
+.nav a img {
+  width: 70px;
+  height: 70px;
+}
+
+.boutons {
+  display: inline-block;
+  padding-left : 0.7%;
+  width : 15%;
+  height: inherit;
+  display: flex;
+  margin: auto;
+
+  white-space: nowrap; /* interdiction de passer à la ligne */
+  overflow: hidden;
+  text-align: center;
+}
+
+.boutons :hover {
+  cursor: pointer;
+  color: var(--baseColor2);
+}
+
+.boutons a :hover {
+  cursor: pointer;
+  /* opacity: 0.7; */
+  filter: var(--shadow);
+}
+
+.boutons a {
+  margin: auto;
+  color : white;
+  font-size: 1.3em;
+  text-decoration: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  z-index: 2;
+
+}
+
+#hote a {
+  color: white;
+  text-shadow: var(--contour);
+}
+
+/** FIN NAV BARRE *********** */
