@@ -1,0 +1,144 @@
+:root {
+    --baseColor : #857669;
+    --baseColor2 : #BBA591;
+    --baseGrey : #3A3737;
+    --baseHote : #AE4D26;
+    --contour : 1px 0 0 var(--baseColor2), 1px 1px 0 var(--baseColor2), 0 1px 0 var(--baseColor2), -1px 1px 0 var(--baseColor2), -1px 0 0 var(--baseColor2), -1px -1px 0 var(--baseColor2), 0 -1px 0 var(--baseColor2), 1px -1px 0 var(--baseColor2);
+    --shadow : drop-shadow(0 0 0.1rem crimson);
+
+}
+
+body {
+    width : 100%;
+    margin : auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/****** HEADER ****/
+
+header {
+    background-image: url("images/fondAccueil.jpg"); 
+    width : 100%;
+    display: flex;
+}
+
+/** NAV BARRE ******************************************************************* */
+
+.nav {
+    width : 100vv;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+    font-size: small;
+    /* padding-left : 60px; */
+}
+
+.nav a img {
+    margin-top: 20px;
+    width: 40px;
+    height: 40px;
+}
+
+.boutons {
+    display: inline-block;
+    /* padding-left : 0.7%; */
+    width : 100%;
+    /* height: inherit; */
+    display: flex;
+    margin: 20px;
+
+    white-space: nowrap; /* interdiction de passer à la ligne */
+    overflow: hidden;
+    text-align: center;
+}
+
+.boutons :hover {
+    cursor: pointer;
+    color: var(--baseColor2);
+}
+
+.boutons a :hover {
+    cursor: pointer;
+    /* opacity: 0.7; */
+    filter: var(--shadow);
+}
+
+.boutons a {
+    margin: auto;
+    color : white;
+    font-size: 1.3em;
+    text-decoration: none;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    z-index: 2;
+
+}
+
+#hote a {
+    color: white;
+    text-shadow: var(--contour);
+}
+
+/** FIN NAV BARRE *********** */
+
+.fond {
+    display: flex;
+    justify-content: left;
+    align-items: normal;
+    background-size: cover;
+    width : 100%;
+    height: 100vh;
+    text-align: start, left;
+}
+
+.logo img {
+    position: absolute;
+    right: -3%;
+    /* margin-top: -6%; */
+    width : 34%;
+}
+
+.fond p {
+    position: absolute;
+    right: 8%;
+    bottom: 3%;
+    text-align: center;
+    text-shadow: 3px 3px 6px black;
+}
+
+.ensemble {
+    font-family: 'century gothic', 'candara', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #F3E2D4;
+    font-size: 1.6em;
+}
+
+.vote {
+    font-family: 'century gothic', 'candara', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #D68C4C;
+    font-size: 1em;
+}
+
+/** FIN HEADER ************** */
+
+/** FOOTER ******************************************************************* */
+
+footer {    
+    background-color: var(--baseColor);
+    width : 100vv;
+    height: 170px;
+    display: flex;
+}
+
+footer p {
+    margin: 1.5% 6%;
+    font-size: small;
+    color: white;
+}
+
+footer p span {
+    color: var(--baseGrey);
+    font-size: medium;
+}
+
+/** FIN FOOTER ************** */

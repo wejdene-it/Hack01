@@ -30,20 +30,23 @@ header {
     display: flex;
     flex-direction: column;
     z-index: 2;
+    font-size: small;
+    /* padding-left : 60px; */
 }
 
 .nav a img {
-    width: 70px;
-    height: 70px;
+    margin-top: 20px;
+    width: 40px;
+    height: 40px;
 }
 
 .boutons {
     display: inline-block;
-    padding-left : 0.7%;
-    width : 15%;
-    height: inherit;
+    /* padding-left : 0.7%; */
+    width : 100%;
+    /* height: inherit; */
     display: flex;
-    margin: auto;
+    margin: 35px;
 
     white-space: nowrap; /* interdiction de passer à la ligne */
     overflow: hidden;
@@ -92,13 +95,13 @@ header {
 .logo img {
     position: absolute;
     right: -3%;
-    margin-top: -6%;
+    /* margin-top: -6%; */
     width : 34%;
 }
 
 .fond p {
     position: absolute;
-    right: 11%;
+    right: 8%;
     bottom: 3%;
     text-align: center;
     text-shadow: 3px 3px 6px black;
@@ -107,13 +110,13 @@ header {
 .ensemble {
     font-family: 'century gothic', 'candara', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: #F3E2D4;
-    font-size: 3.2em;
+    font-size: 2.5em;
 }
 
 .vote {
     font-family: 'century gothic', 'candara', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: #D68C4C;
-    font-size: 2em;
+    font-size: 1.6em;
 }
 
 /** FIN HEADER ************** */
@@ -123,7 +126,7 @@ header {
 footer {    
     background-color: var(--baseColor);
     width : 100vv;
-    height: 120px;
+    height: 150px;
     display: flex;
 }
 
