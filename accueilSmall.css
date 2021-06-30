@@ -17,17 +17,19 @@ body {
 /****** HEADER ****/
 
 header {
-    background-image: url("images/fondAccueil.jpg");
-    width : 100%; 
+    background-image: url("images/fondAccueil.jpg"); 
+    width : 100%;
+    display: flex;
 }
 
 /** NAV BARRE ******************************************************************* */
 
 .nav {
-    background-color: var(--baseColor);
     width : 100vv;
-    height: 100px;
+    height: 100vh;
     display: flex;
+    flex-direction: column;
+    z-index: 2;
 }
 
 .nav a img {
@@ -97,7 +99,7 @@ header {
 .fond p {
     position: absolute;
     right: 11%;
-    bottom: 13%;
+    bottom: 3%;
     text-align: center;
     text-shadow: 3px 3px 6px black;
 }
