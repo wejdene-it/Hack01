@@ -117,3 +117,25 @@ header {
     color: white;
     text-shadow: var(--contour);
 }
+
+/** FOOTER ******************************************************************* */
+
+footer {    
+    background-color: var(--baseColor);
+    width : 100vv;
+    height: 120px;
+    display: flex;
+}
+
+footer p {
+    margin: 1.5% 6%;
+    font-size: small;
+    color: white;
+}
+
+footer p span {
+    color: var(--baseGrey);
+    font-size: medium;
+}
+
+/** FIN FOOTER ************** */
