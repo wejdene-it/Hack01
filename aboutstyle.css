@@ -16,6 +16,11 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
 font-size: 1.4em;
 text-align: center;
 }
+#P1 h1:hover
+{
+    color :#be9671;
+}
+
 #P1 h2{
     color:red;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -88,11 +93,13 @@ header {
 
 .boutons :hover {
     cursor: pointer;
-    background-color: var(--baseColor2);
-    width : 100%;
-    height : 70px;
-    padding-top: 20px;
-    margin: auto;
+    color: var(--baseColor2);
+}
+
+.boutons a :hover {
+    cursor: pointer;
+    /* opacity: 0.7; */
+    filter: var(--shadow);
 }
 
 .boutons a {
@@ -102,27 +109,11 @@ header {
     text-decoration: none;
     overflow: hidden;
     text-overflow: ellipsis;
+    z-index: 2;
 
 }
 
-/** FIN NAV BARRE *********** */
-
-.fond {
-    background-image: url("images/fondAccueil.jpg");
-    display: flex;
-    justify-content: left;
-    align-items: normal;
-    background-size: cover;
-    width : 100%;
-    height: 100vh;
-    text-align: start, left;
+#hote a {
+    color: white;
+    text-shadow: var(--contour);
 }
-
-.logo img {
-    position: absolute;
-    right: -3%;
-    margin-top: -6%;
-    width : 34%;
-}
-
-/** FIN HEADER ************** */
