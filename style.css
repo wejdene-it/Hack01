@@ -1,6 +1,13 @@
 body{
     background-color: black;
-    
+    width : 100%;
+    margin : auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+}
+
+#P1{
+padding-top: 60px; 
 }
 #P1 h1{
 color:white;
@@ -38,3 +45,83 @@ text-align: justify;
 padding: 0 5rem 1.5rem 5rem;
 
 }
+
+
+/****** HEADER ****/
+
+header {
+    width : 100%;
+}
+
+/** NAV BARRE ******************************************************************* */
+:root {
+    --baseColor : #857669;
+    --baseColor2 : #be9671;
+    --baseGrey : #3A3737;
+
+}
+.nav {
+    background-color: var(--baseColor);
+    width : 100vv;
+    height: 100px;
+    display: flex;
+}
+
+.nav a img {
+    width: 70px;
+    height: 70px;
+}
+
+.boutons {
+    display: inline-block;
+    padding-left : 0.7%;
+    width : 15%;
+    height: inherit;
+    display: flex;
+    margin: auto;
+
+    white-space: nowrap; /* interdiction de passer à la ligne */
+    overflow: hidden;
+    text-align: center;
+}
+
+.boutons :hover {
+    cursor: pointer;
+    background-color: var(--baseColor2);
+    width : 100%;
+    height : 70px;
+    padding-top: 20px;
+    margin: auto;
+}
+
+.boutons a {
+    margin: auto;
+    color : white;
+    font-size: 1.3em;
+    text-decoration: none;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}
+
+/** FIN NAV BARRE *********** */
+
+.fond {
+    background-image: url("images/fondAccueil.jpg");
+    display: flex;
+    justify-content: left;
+    align-items: normal;
+    background-size: cover;
+    width : 100%;
+    height: 100vh;
+    text-align: start, left;
+}
+
+.logo img {
+    position: absolute;
+    right: -3%;
+    margin-top: -6%;
+    width : 34%;
+}
+
+/** FIN HEADER ************** */
